@@ -1,16 +1,8 @@
-# hocb1
+Khai báo lớp Transaction:
+Lớp Transaction được sử dụng để biểu diễn một giao dịch tài chính.
+Nó có hai thuộc tính: title (tên giao dịch) và amount (số tiền).
+Một constructor được sử dụng để tạo một đối tượng Transaction với giá trị cho title và amount.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Trong phần này, bạn sử dụng một widget Column để hiển thị danh sách các giao dịch.
+transactions.map((tx) { ... }) biến đổi danh sách transactions thành danh sách các widget Card chứa thông tin về mỗi giao dịch.
+Mỗi giao dịch được hiển thị bằng một widget Card chứa một ListTile với biểu tượng tiền, tên giao dịch và số tiền.
